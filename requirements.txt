@@ -1,0 +1,8 @@
+py-cord
+revChatGPT
+python-dotenv
+parsedatetime
+pytz
+tiktoken
+firebase-admin
+gTTS
