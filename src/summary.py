@@ -28,8 +28,6 @@ class Summary:
         self.full_summary = ""
 
     def summarize(self, prompt, key):
-        if key == "pok its confusing because i dont have diZ context":
-            key = os.getenv("CHATGPT_TOKEN")
         response = openai.ChatCompletion.create(
             model="gpt-3.5-turbo",
             messages=self.messages(prompt),
