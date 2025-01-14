@@ -1,0 +1,16 @@
+[project]
+name = "summary-bot"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "firebase-admin>=6.6.0",
+    "gtts>=2.5.4",
+    "openai>=1.58.1",
+    "parsedatetime>=2.6",
+    "py-cord>=2.6.1",
+    "python-dotenv>=1.0.1",
+    "pytz>=2024.2",
+    "tiktoken>=0.8.0",
+]
