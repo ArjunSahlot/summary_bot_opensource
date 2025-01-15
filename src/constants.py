@@ -100,7 +100,7 @@ SERVER_KEY_PROVIDER = "Summary Bot Key Provider"
 
 SUMMARY_BOT_ID = 1058568749076185119
 
-DEVELOPER_PASSWORD = r"jsd0f=*sdnfkOD0S&2h"
+DEVELOPER_PASSWORD = r"redacted"
 
 TIMEZONES = {
     "UTC (Universal Coordinated Time)": 0,
