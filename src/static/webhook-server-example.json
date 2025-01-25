@@ -1,0 +1,6 @@
+{
+    "history": "Here are many messages that have been sent to the channel. Some comments are irrelevant. Some are important. But hopefully AI will simplify it all.",
+    "bot_webhook_server": "http://localhost:5000/webhook",
+    "channel_id": 1332451557530402877,
+    "target_webhook": "https://hooks.zapier.com/hooks/catch/30615/2f3lh4c/"
+}
