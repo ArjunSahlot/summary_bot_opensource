@@ -17,12 +17,12 @@ def webhook():
     if data:
         # Extract useful information from the webhook payload
         message = data.get("message", "Default message from webhook") 
-        channel_id = data.get("channel_id", 0)
-        if channel_id == 0:
-            channel_id = int(channel_id)
+        target_channel_id = data.get("target_channel_id", 0)
+        if target_channel_id == 0:
+            target_channel_id = int(target_channel_id)
         target_webhook = data.get("target_webhook", 0)
-        app.bot.loop.create_task(send_message_to_discord(message, channel_id))
-        app.bot.loop.create_task(call_for_summary(message, "standard", channel_id, False, target_webhook))
+        app.bot.loop.create_task(send_message_to_discord(message, target_channel_id))
+        app.bot.loop.create_task(call_for_summary(message, "standard", target_channel_id, False, target_webhook))
 
 #        message = history[::-1]
 #        mode = "standard"
