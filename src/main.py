@@ -2,7 +2,9 @@ import os
 import json
 import threading
 
-import discord
+import discord 
+from discord import Option
+
 from dotenv import load_dotenv
 load_dotenv()
 
@@ -13,8 +15,22 @@ from events import *
 from commands import *
 
 
+
 intents = discord.Intents.default()
 bot = discord.Bot(intents=intents)
+
+
+from webhook import *
+# Run Flask in a separate thread
+def run_flask(bot):
+    app.bot = bot  # Attach the bot instance to the Flask app
+    app.run(host="0.0.0.0", port=5000)  # Set host and port for the Flask server
+
+
+# Run the Flask app in a thread to avoid blocking the bot
+flask_thread = threading.Thread(target=run_flask, args=(bot,))
+flask_thread.start()
+
 
 async def on_ready():
     print(f"{bot.user.name} is ready")

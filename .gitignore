@@ -141,3 +141,8 @@ cython_debug/
 .DS_Store
 
 .vscode
+
+src/static/martin.json
+src/static/summary-bot-firebase-credentials.json
+
+setenv.ps1

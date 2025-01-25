@@ -4,7 +4,7 @@ from copy import deepcopy
 import firebase_admin
 from firebase_admin import credentials, firestore
 
-cred = credentials.Certificate("static/summary-bot-firebase-credentials.json")
+cred = credentials.Certificate("src/static/summary-bot-firebase-credentials.json")
 firebase_admin.initialize_app(cred)
 DATABASE = firestore.client()
 
